@@ -1,0 +1,126 @@
+{
+  "adminSecret": "123456",
+  "profile": {
+    "name": "小王",
+    "title": "资深 Java 开发工程师 / 电商后端专家",
+    "greeting": "你好，我是",
+    "status": "寻求更具挑战性的机会",
+    "bio": [
+      "深耕 Java 后端开发 5 年，专注于 C 端电商领域，具备大型分布式系统架构设计与落地经验",
+      "擅长高并发场景下的性能优化：主导过双十一级别的秒杀系统与大促营销活动，解决过数据库瓶颈、消息堆积及分布式事务等核心痛点",
+      "技术栈全面：精通 Spring Cloud 微服务架构，深入理解 Redis 缓存策略、RocketMQ 消息队列及 ElasticSearch 搜索优化",
+      "业务驱动：深入理解电商业务全链路，包括商品中心、订单中心、营销系统、支付结算及用户增长模块",
+      "工程化实践：主导过核心业务系统的重构与解耦，擅长通过设计模式提升代码可维护性，具备完善的 CI/CD 与自动化监控经验",
+      "解决问题：具备极强的线上问题定位与排查能力，能够快速响应生产故障，进行 JVM 调优与 SQL 深度优化"
+    ]
+  },
+  "skills": [
+    {
+      "category": "Java 后端核心",
+      "items": "Java (8/11/17), Spring Boot, Spring Cloud Alibaba, MyBatis-Plus"
+    },
+    {
+      "category": "中间件 & 数据库",
+      "items": "MySQL (读写分离/分库分表), Redis (集群/缓存穿透), RocketMQ, Kafka, ElasticSearch"
+    },
+    {
+      "category": "分布式架构",
+      "items": "Sentinel (流量治理), Nacos, Gateway, Seata (分布式事务), ShardingSphere"
+    },
+    {
+      "category": "运维 & 监控",
+      "items": "Docker, K8s, Jenkins (CI/CD), Prometheus, SkyWalking (全链路追踪)"
+    }
+  ],
+  "contact": [
+    {
+      "platform": "phone",
+      "value": "13800138000"
+    },
+    {
+      "platform": "Email",
+      "value": "your-email@example.com"
+    },
+    {
+      "platform": "WeChat",
+      "value": "your-wechat-id"
+    },
+    {
+      "platform": "Weibo",
+      "value": "@example"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "亿级流量电商平台（核心交易链路重构）",
+      "technologies": [
+        "Spring Cloud Alibaba",
+        "RocketMQ",
+        "Redis",
+        "ShardingSphere",
+        "MySQL",
+        "Seata"
+      ],
+      "description": "针对原有单体架构无法支撑高并发流量的痛点，主导了交易链路的微服务化重构。系统日均活跃用户 (DAU) 达百万级，峰值 QPS 突破 5W+。通过 ShardingSphere 实现了订单表的库表拆分，解决了单表亿级数据的查询性能瓶颈；引入 RocketMQ 进行异步解耦与削峰填谷，显著提升了系统吞吐量；使用 Seata 解决了微服务间的分布式事务一致性问题。",
+      "images": [
+        {
+          "url": "https://placehold.co/800x600?text=E-commerce+Architecture",
+          "caption": "微服务架构拓扑图"
+        },
+        {
+          "url": "https://placehold.co/800x600?text=Order+Center",
+          "caption": "订单中心管理后台"
+        }
+      ],
+      "credentials": {
+        "url": "http://mall-demo.example.com",
+        "username": "admin",
+        "password": "admin_password_123",
+        "remark": "演示环境已开启全量数据权限，请勿删除核心配置"
+      }
+    },
+    {
+      "id": 2,
+      "title": "极速秒杀系统（高并发活动引擎）",
+      "technologies": [
+        "Redis",
+        "Lua",
+        "RocketMQ",
+        "Sentinel",
+        "SpringBoot"
+      ],
+      "description": "独立负责秒杀模块的设计与开发，成功应对多次大促活动。采用 Redis + Lua 脚本实现分布式限流与库存预扣减，确保系统在高并发下不超卖；引入 Sentinel 进行服务熔断与降级，保障核心链路稳定性；通过 RocketMQ 异步处理订单创建，实现流量削峰。系统在峰值 20W QPS 下平稳运行，订单处理延迟降低了 70%。",
+      "images": [
+        {
+          "url": "https://placehold.co/800x600?text=Flash+Sale+Process",
+          "caption": "秒杀流量控制流程"
+        }
+      ],
+      "credentials": {
+        "url": "http://seckill-dashboard.example.com",
+        "username": "tester",
+        "password": "tester_password_456",
+        "remark": "每 10 分钟自动重置一次库存数据，仅供压测模拟演示"
+      }
+    },
+    {
+      "id": 3,
+      "title": "智能搜索与推荐系统",
+      "technologies": [
+        "ElasticSearch",
+        "Logstash",
+        "Canal",
+        "Redis",
+        "SpringBoot"
+      ],
+      "description": "为提升电商平台的商品转化率，构建了基于 ElasticSearch 的分布式搜索平台。利用 Canal 监听 MySQL Binlog 结合 Logstash 实现数据的近实时同步；针对搜索关键词进行多维度权重调优，使搜索准确率提升 30%；引入 Redis 缓存热点搜索词，降低 ES 查询压力。同时实现了基于用户行为的简单协同过滤推荐算法，提升了首页点击率。",
+      "images": [
+        {
+          "url": "https://placehold.co/800x600?text=Search+Optimization",
+          "caption": "搜索召回率与转化分析"
+        }
+      ]
+    }
+  ]
+}
