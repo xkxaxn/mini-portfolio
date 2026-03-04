@@ -7,11 +7,15 @@
 ## ✨ 核心特性 (Features)
 
 ### 🎨 现代化前台展示
+![前台展示页面](docs/images/展示页.png)
+
 - **优雅设计**：响应式布局，基于 Tailwind CSS 构建，完美适配手机、平板和桌面端。
 - **多视图切换**：支持卡片 (Grid) 和列表 (List) 两种展示模式。
 - **交互体验**：内置图片轮播、项目详情弹窗及平滑过渡动画。
 
 ### 🛠 可视化后台管理
+![后台管理页面](docs/images/编辑页.png)
+
 - **所见即所得**：全表单化编辑，告别繁琐的 JSON 手写修改。
 - **动态配置**：支持无限添加自定义联系方式（如 GitHub, Bilibili 等）与技能分类。
 - **数据安全**：内置导入/导出及一键备份功能，支持操作回滚。
@@ -65,12 +69,12 @@ npm run dev
 
 1. **拉取镜像**
    ```bash
-   docker pull xkxaxn/portfolio:latest
+   docker pull xkxaxn/mini-portfolio:latest
    ```
 
 2. **启动容器**
    ```bash
-   docker run -d --restart=always -p 3000:3000 --name portfolio_service xkxaxn/portfolio:latest
+   docker run -d --restart=always -p 3000:3000 --name portfolio_service xkxaxn/mini-portfolio:latest
    ```
    - `-d`: 后台运行
    - `--restart=always`: 容器自动重启
